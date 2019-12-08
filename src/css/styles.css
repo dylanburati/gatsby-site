@@ -16,6 +16,10 @@ p {
   @apply mb-4;
 }
 
+input:focus {
+  outline: none;
+}
+
 @tailwind components;
 
 .card {
@@ -29,6 +33,24 @@ p {
 }
 
 @tailwind utilities;
+
+.bg-black-200 {
+  background-color: #eff2f5
+}
+
+@variants hover {
+  .bg-black-300 {
+    background-color: #e2e5e8
+  }
+}
+
+.shadow-md-dark {
+  box-shadow: 0 3px 6px 0px rgba(0, 0, 0, 0.15), 0 1px 4px 1px rgba(0, 0, 0, 0.09);
+}
+
+.transition-linear-200 {
+  transition: all linear 200ms;
+}
 
 @responsive {
   .flex-basis-1\/2 {
